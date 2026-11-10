@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Визитная карточка Винни-Пуха из советских мультфильмов Фёдора Хитрука.">
+  <title>Винни-Пух · Визитная карточка</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main>
+    <header class="page-header">
+      <h1>Винни-Пух</h1>
+      <a class="write-link" href="#name">Написать Пуху</a>
+    </header>
+    <a href="images/pooh.jpg" title="Открыть кадр «Винни-Пух у указателя»">
+      <img src="images/pooh.jpg" width="320" height="240" alt="Винни-Пух стоит у указателя «Высокий-превысокий дуб»">
+    </a>
+    <p>Винни-Пух — коричневый медвежонок из советских мультфильмов студии «Союзмультфильм». Он любит мёд, сочиняет песенки и часто попадает в смешные истории вместе с Пятачком.</p>
+
+    <section>
+      <h2>О Винни-Пухе</h2>
+      <p>Три мультфильма о Пухе снял режиссёр Фёдор Хитрук по мотивам книги Алана Милна. Сценарии написали Хитрук и Борис Заходер. Пуха озвучил Евгений Леонов, а Пятачка — Ия Саввина.</p>
+      <ul>
+        <li>«Винни-Пух» (1969)</li>
+        <li>«Винни-Пух идёт в гости» (1971)</li>
+        <li>«Винни-Пух и день забот» (1972)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Две истории из мультфильмов</h2>
+      <p>Нажмите на картинку, чтобы открыть её в полном размере.</p>
+
+      <h3>Как Пух добирался до мёда</h3>
+      <a href="images/pooh-balloon.png" title="Открыть кадр «Пух на воздушном шарике»">
+        <img src="images/pooh-balloon.png" width="320" height="258" alt="Винни-Пух на синем воздушном шарике тянется к улью">
+      </a>
+      <p>В первом мультфильме Пух замечает пчёл и просит у Пятачка воздушный шарик. Он поднимается к дереву и притворяется маленькой тучкой, чтобы пчёлы его не заметили. План с тучкой проваливается, и Пух остаётся без мёда.</p>
+
+      <h3>День рождения ослика Иа-Иа</h3>
+      <a href="images/eeyore-birthday.jpg" title="Открыть кадр «Подарки ослика Иа-Иа»">
+        <img src="images/eeyore-birthday.jpg" width="320" height="240" alt="Иа-Иа с горшочком, рядом стоят Винни-Пух и Пятачок">
+      </a>
+      <p>В «Дне забот» Пух и Пятачок готовят подарки для Иа-Иа. Пух съедает мёд, а у Пятачка лопается шарик. Ослик всё равно радуется подаркам, потому что лопнувший шарик как раз помещается в пустой горшочек.</p>
+
+      <p><a href="https://www.youtube.com/watch?v=7G_fYgW5Tys">Все три мультфильма на канале «Союзмультфильма»</a>.</p>
+    </section>
+
+    <section>
+      <h2>Письмо Пуху</h2>
+      <form id="feedback-form" novalidate>
+        <div class="field">
+          <label for="name">Имя</label>
+          <input id="name" name="name" type="text" autocomplete="name" required aria-describedby="name-error">
+          <small class="error" id="name-error" aria-live="polite"></small>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" required aria-describedby="email-error">
+          <small class="error" id="email-error" aria-live="polite"></small>
+        </div>
+        <div class="field">
+          <label for="message">Сообщение</label>
+          <textarea id="message" name="message" rows="4" required aria-describedby="message-error"></textarea>
+          <small class="error" id="message-error" aria-live="polite"></small>
+        </div>
+        <button type="submit">Отправить</button>
+      </form>
+    </section>
+
+  </main>
+</body>
+</html>
